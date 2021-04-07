@@ -6,7 +6,7 @@ export default function TrackSearchResult({ track, chooseTrack }) {
   }
   return (
     <div
-      className="d-flex m-2 align-items-center"
+      className="d-flex m-2 align-items-center track-hover"
       style={{ cursor: 'pointer' }}
       onClick={handlePlay}
     >

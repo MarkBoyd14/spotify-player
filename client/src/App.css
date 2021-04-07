@@ -1,0 +1,31 @@
+@media (min-width: 992px) {
+  .form-control,
+  .search-results {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.track-hover:hover {
+  background-color: #212121;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #535353;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1db954;
+}

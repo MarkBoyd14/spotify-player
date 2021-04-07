@@ -74,14 +74,28 @@ export default function Dashboard({ code }) {
   }, [search, accessToken]);
 
   return (
-    <Container className="d-flex flex-column py-2" style={{ height: '100vh' }}>
+    <Container
+      fluid
+      className="d-flex flex-column pt-2"
+      style={{
+        height: '100vh',
+        color: '#f5f5f5',
+        backgroundColor: '#121212',
+        width: '100%',
+        padding: '0',
+      }}
+    >
       <Form.Control
         type="search"
-        placeholder="Search Song/Artist"
+        placeholder="Search a song, artist, or album..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+        style={{ width: '95%', margin: '0 auto' }}
       />
-      <div className="flex-grow-1 my-2" style={{ overflowY: 'auto' }}>
+      <div
+        className="flex-grow-1 my-2 search-results"
+        style={{ overflowY: 'auto', width: '100%', margin: '0 auto' }}
+      >
         {searchResults.map((track) => (
           <TrackSearchResult
             track={track}
@@ -95,7 +109,7 @@ export default function Dashboard({ code }) {
           </div>
         )}
       </div>
-      <div>
+      <div style={{ backgroundColor: '#212121', flexWrap: 'nowrap' }}>
         <Player accessToken={accessToken} trackUri={playingTrack?.uri}></Player>
       </div>
     </Container>
