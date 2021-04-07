@@ -1,0 +1,16 @@
+{
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && yarn && yarn start",
+    "heroku-postbuild": "cd client && yarn && yarn build"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
