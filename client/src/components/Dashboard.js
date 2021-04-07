@@ -33,6 +33,7 @@ export default function Dashboard({ code }) {
         },
       })
       .then((res) => {
+        console.log(res);
         setLyrics(res.data.lyrics);
       });
   }, [playingTrack]);
