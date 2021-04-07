@@ -1,7 +1,9 @@
 # Spotify Player
-React app that uses the Spotify API to allow songs, artists, or albums to be searched for and played in the browser.
+React app that uses the Spotify API to be played in the browser.
 
 Hosted on Heroku.
+
+How to use: Click "Login With Spotify" (this is linked to my own Spotify account) then search for a song by entering the title, artist, or album in the search field.
 
 Built using the following npm packages:
 - create-react-app
