@@ -31,6 +31,9 @@ export default function Dashboard({ code }) {
           track: playingTrack.title,
           artist: playingTrack.artist,
         },
+        headers: {
+          'Content-Type': 'application/json',
+        },
       })
       .then((res) => {
         setLyrics(res.data.lyrics);
