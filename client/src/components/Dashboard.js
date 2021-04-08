@@ -26,14 +26,10 @@ export default function Dashboard({ code }) {
   useEffect(() => {
     if (!playingTrack) return;
     axios
-      .get('/lyrics', {
+      .get('http://localhost:3001/api/lyrics', {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
-        },
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
         },
       })
       .then((res) => {
